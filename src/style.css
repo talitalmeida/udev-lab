@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1.1;
+    font-weight:650;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  a {
+    font-weight: 500;
+    text-decoration: inherit;
+    color: #fefefe;
+  }
+  a:hover {
+    color: #673ADF;
+  }
+
+#app {
+  margin: 0 auto ;
+  padding: 2rem;
+}
+
+.custom-align {
+  vertical-align: -2px;
+
+}
+
+.image-container {
+  position: relative;
+  width: 120%; /* Ajuste conforme necessário */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #fefefe;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.overlay-text2 {
+  position: absolute;
+  top: 3.5%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  color: #673ADF;
+  font-size: 40px;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background-glow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Certifique-se de que o conteúdo fique acima do fundo */
+  padding: 20px; /* Ajuste conforme necessário */
+}
+
+.barra-menu {
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.barra-menu::before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background-color: #673ADF;
+  opacity: 50%;
+}
+

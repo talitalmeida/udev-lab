@@ -28,13 +28,13 @@
 }
 
 .custom-align {
-  vertical-align: -2px;
+  vertical-align: -0.5px;
 
 }
 
 .image-container {
   position: relative;
-  width: 120%; /* Ajuste conforme necessário */
+  width: 120%;
 }
 
 .image-container img {
@@ -81,8 +81,8 @@ body {
 
 .content {
   position: relative;
-  z-index: 1; /* Certifique-se de que o conteúdo fique acima do fundo */
-  padding: 20px; /* Ajuste conforme necessário */
+  z-index: 1;
+  padding: 20px;
 }
 
 .barra-menu {

@@ -2,6 +2,8 @@
 
 O Udev Lab é um site institucional, nele é apresentado uma Empresa Júnior de desenvoldedores de software.
 
+A ideia aqui é aplicar responsividade!
+
 <div style=" display: inline_block"> <!--Ícones de dev-->
 
 O site utiliza das ferramentas abaixo para a construção.

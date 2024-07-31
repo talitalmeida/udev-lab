@@ -22,7 +22,7 @@
       </svg>
       <h2 class="font-semibold text-light-100 text-2xl mt-0.5">Udev Lab</h2>
     </div>
-    <div class="flex items-center gap-8">
+    <div class="hidden md:flex items-center gap-8">
       <div class="barra-menu"></div>
       <a href="#inicio">INÍCIO</a>
       <a href="#sobre">SOBRE A UDEV</a>
@@ -30,7 +30,29 @@
       <a href="#servicos">SERVIÇOS</a>
       <button type="button" class="text-light-100 hover:text-light-100 border border-primary-200 hover:bg-primary-200 focus:ring-4 focus:outline-none focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2 text-center me-1 mb-0">CONTATO</button>
     </div>
+    <div class="md:hidden flex items-center">
+      <button @click="toggleMenu" class="text-2xl ">
+        <Icon icon="solar:hamburger-menu-outline"/>
+      </button>
+    </div>
+    <div v-if="menuOpen" class="absolute top-16 right-0 bg-primary-200 w-40 md:hidden flex flex-col items-end p-4">
+      <a href="#inicio" class="block mb-2">INÍCIO</a>
+      <a href="#sobre" class="block mb-2">SOBRE A UDEV</a>
+      <a href="#duvidas" class="block mb-2">DÚVIDAS</a>
+      <a href="#servicos" class="block mb-2">SERVIÇOS</a>
+      <a href="#contato" class="block mb-2">CONTATO</a>
+    </div>
   </nav>
 </template>
+
 <script setup>
+  import { ref } from 'vue';
+  import {Icon} from "@iconify/vue";
+
+  const menuOpen = ref(false);
+
+  function toggleMenu() {
+    menuOpen.value = !menuOpen.value;
+  }
+
 </script>
